@@ -1,0 +1,7 @@
+server:
+  port: 1002
+spring:
+  profiles:
+    active: consul
+  application:
+    name: cloud-provider-payment-1002

@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    consul:
+      host: 127.0.0.1
+      discovery:
+        ip-address: 192.168.0.116
+        enabled: true
+        register: true
+        prefer-ip-address: true
+        service-name: ${spring.application.name}
+        instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}-${server.port}
+        health-check-interval: 5s

@@ -1,0 +1,7 @@
+server:
+  port: 2001
+spring:
+  profiles:
+    active: consul
+  application:
+    name: cloud-order-customer-2001
