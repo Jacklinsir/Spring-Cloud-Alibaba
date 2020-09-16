@@ -5,3 +5,12 @@ spring:
     active: consul
   application:
     name: cloud-order-feign-customer-2002
+#feign:
+#  compression:
+#    request:
+#      enabled: true #请求压缩
+#      mime-types:    text/html,application/xml,application/json # 设置压缩的数据类型
+#      min-request-size: 2048 # 设置触发压缩的大小下限
+#      #以上数据类型，压缩大小下限均为默认值
+#    response:
+#      enabled: true #响应压缩

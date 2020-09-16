@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @Component
-@FeignClient(value = "cloud-provider-payment-1001")
+@FeignClient(value = "cloud-provider-hystrix-payment-1001")
 public interface PaymentFeignService
 {
-
     @GetMapping(value = "/payment/{id}")
-    public String getPayment(@PathVariable("id") String id);
+    String getPayment(@PathVariable("id") String id);
 }

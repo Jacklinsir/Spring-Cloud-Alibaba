@@ -1,0 +1,7 @@
+server:
+  port: 1001
+spring:
+  profiles:
+    active: consul
+  application:
+    name: cloud-provider-hystrix-payment-1001
